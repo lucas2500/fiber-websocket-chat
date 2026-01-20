@@ -9,9 +9,12 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+var ()
+
 func main() {
 
 	app := fiber.New()
+
 	routes.SetupRoutes(app)
 
 	go services.RunChat()
